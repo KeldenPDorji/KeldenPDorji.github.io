@@ -19,11 +19,12 @@ The SQL Set operation is used to combine the two or more SQL SELECT statements.
     FROM table2;
 
 Purpose: Combines the results of two or more SELECT statements and removes duplicate tuples.
+
 Constraints:
 
-    Each SELECT statement within UNION must have the same number of columns.
-    Columns must have similar data types.
-    Result set is sorted and duplicate rows are removed.
+Each SELECT statement within UNION must have the same number of columns.
+Columns must have similar data types.
+Result set is sorted and duplicate rows are removed.
 
 2.UNION ALL:
 
@@ -39,7 +40,7 @@ It is faster than UNION due to the absence of duplicate elimination.
 
 Constraints:
 
-    Each SELECT statement within UNION ALL must have the same number of columns with compatible data types.
+Each SELECT statement within UNION ALL must have the same number of columns with compatible data types.
 
 3.Intercept:
 
@@ -54,7 +55,7 @@ Purpose: Returns only the rows that appear commonly in both the sets.
 
 Constraints:
 
-    Each SELECT statement within INTERSECT must have the same number of columns with compatible data types.
+Each SELECT statement within INTERSECT must have the same number of columns with compatible data types.
 
 4.MINUS:
 
@@ -69,7 +70,7 @@ Purpose: Returns only the rows that appear in the first result set but not in th
 
 Constraints:
 
-    Each SELECT statement within MINUS must have the same number of columns with compatible data types.
+Each SELECT statement within MINUS must have the same number of columns with compatible data types.
 
 ## NULL values in SQL
 
