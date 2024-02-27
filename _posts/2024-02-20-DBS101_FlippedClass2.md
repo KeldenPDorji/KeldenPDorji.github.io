@@ -16,3 +16,6 @@ Besides, we were thoughtful with regard to applying Crow's Foot diagramming to d
 On top of that, we also took into the account such items as type of entities and representation of them using Crow's Foot notation. Regular entities were drawn as rectangles, and weak entities, which were contingent on another entity, were drawn instead as double rectangles.
 
 By skillfully combining all the aspects of identifying entities, relationships, and attributes, we attempted to deduce an ER diagram, which communicates the core of our airline reservation system and aids comprehension on internal structure, functionality, and data flow.
+
+
+[![ER model for Airline Reservation System](https://i.ytimg.com/vi/FcC8zhtOaSg/maxresdefault.jpg)](https://www.youtube.com/watch?app=desktop&v=FcC8zhtOaSg)
