@@ -18,4 +18,6 @@ On top of that, we also took into the account such items as type of entities and
 By skillfully combining all the aspects of identifying entities, relationships, and attributes, we attempted to deduce an ER diagram, which communicates the core of our airline reservation system and aids comprehension on internal structure, functionality, and data flow.
 
 
+Reference:
+
 [![ER model for Airline Reservation System](https://i.ytimg.com/vi/FcC8zhtOaSg/maxresdefault.jpg)](https://www.youtube.com/watch?app=desktop&v=FcC8zhtOaSg)
