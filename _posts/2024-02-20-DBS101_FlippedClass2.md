@@ -11,7 +11,7 @@ In our group discussion focusing on creating an ER diagram for our Airline reser
 
 Diagramming the relationships among these entities helped us comprehend the need of employing the Crow's Foot notation to briefly and concisely show the cardinality and the participation constraints. For example, we emphasized that a single user can reserve and cancel multiple tickets, which we displayed using Crow's Foot notation showing a "1:M" relationship links Ticket entity to the User entity.
 
-Besides, we were thoughtful with regard to applying Crow's Foot diagramming to differentiate various attribute types. For example, we applied underline notation for primary key attributes, dashed ellipses for derived attributes, and double ellipses to multi-valued attributes also. Consistent use of the same notation made it simple to track and understand the diagram.
+Besides, we were thoughtful with regard to applying Crow's Foot notation to differentiate various attribute types. For example, we applied underline notation for primary key attributes, dashed ellipses for derived attributes, and double ellipses to multi-valued attributes also. Consistent use of the same notation made it simple to track and understand the diagram.
 
 On top of that, we also took into the account such items as type of entities and representation of them using Crow's Foot notation. Regular entities were drawn as rectangles, and weak entities, which were contingent on another entity, were drawn instead as double rectangles.
 
