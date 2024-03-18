@@ -18,12 +18,12 @@ ROW_NUMBER():is a function in the database language Transact-SQL that assigns a 
 
     Output:
     StudentName	Subject	Marks	RowNumber
-    Kelden  	Maths	65  	1
-    Dechen	    Science	80  	2
-    Tshering	English	89	    3
-    Kinley	    Science	80	    4
-    Sonam	    English	90	    5
-    Kelden	    English	55	    6
+    Kelden      Maths	65  	1
+    Dechen      Science	80  	2
+    Tshering    English	89	    3
+    Kinley      Science	80	    4
+    Sonam       English	90	    5
+    Kelden      English	55	    6
 
 RANK(): This function is quite similar to the ROW_NUMBER() above, only that it gives the same value for the rank to the identical rows and gaps the order for the following rank. 
 
