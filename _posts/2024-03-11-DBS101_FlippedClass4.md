@@ -108,7 +108,7 @@ Cumulative Sum: Calculates the cumulative sum of a column over a specified windo
 
 ### Pivoting
 
-Pivoting in SQL involves transforming data from a row-oriented format to a column-oriented format, enabling the analysis of data across various categories or time periods. This process is crucial for converting extensive datasets into a more compact and readable structure. In SQL, pivoting can be achieved through the use of the PIVOT operator or by employing conditional aggregation with CASE statements. 
+PIVOT is used to transform rows into columns, while UNPIVOT is used to transform columns into rows, effectively reversing the pivot operation. It is necessary to convert these large sets of data so that it can be interpreted more clearly and efficiently. It can be executed by using the PIVOT operator or by employing conditional aggregation with CASE statements.
 
 Using PIVOT Operator: Pivots data based on specified columns.
 
@@ -145,7 +145,7 @@ Using CASE Statements: Another way to pivot data without using the PIVOT operato
 
 ### Rollup and Cube
 
-ROLLUP and CUBE are simple extensions to the SELECT statement's GROUP BY clause. ROLLUP creates subtotals at any level of aggregation needed, from the most detailed up to a grand total. CUBE is an extension similar to ROLLUP , enabling a single statement to calculate all possible combinations of subtotals.
+ROLLUP and CUBE are just simple GROUP BY clause extensions in the SELECT statement. ROLLUP creates subtotals at any level of aggregation needed, from the most detailed up to a grand total. CUBE is an extension similar to ROLLUP , allowing a single statement to calculate all possible combination of subtotals.
 
 ROLLUP: Generates a result set that includes subtotals for each level of grouping.
 
