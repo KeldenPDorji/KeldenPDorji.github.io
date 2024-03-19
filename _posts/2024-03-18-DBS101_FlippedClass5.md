@@ -5,7 +5,6 @@ tags: [DBS101]
 ---
 
 ## Topic: Reaching the Depths of Relational Database Normalization
----
 ### What Is Normalization?
 
 Database normalization is the process of organizing a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity. It was first proposed by Edgar F. Codd.
@@ -109,9 +108,9 @@ Student_ID	Course_Name	Professor
 
 In the above relation:
 
-    One student can enroll in multiple courses.
-    Multiple professors can teach one course.
-    One professor can be assigned only one course.
+One student can enroll in multiple courses.
+Multiple professors can teach one course.
+One professor can be assigned only one course.
 
 So the (Student_ID & Course_Name) will form the primary key. These 2 will compositely determine all other attributes in the relation. In our case, it is only the professor.
 
@@ -185,5 +184,6 @@ The below picture summarizes how to reach the third normal form from an unnormal
 
 Any relational database without normalization may lead to problems like large tables, difficulty maintaining the database as it involves searching many records, poor disk space utilization, and inconsistencies. If we fail to eliminate this kind of problem, it would lead to data integrity and redundancy problems. Normalization of a relational database helps to solve these problems. Normalization applies to a series of transformations in terms of normal forms. Any relation in a database must be normalized to get efficient access to the database. Each Normal form eliminates each type of dependency and improves the data integrity.
 
+### REFERENCE
 Sathish Routu. "Database Normalization | A Step-by-Step Guide with Examples." Analytics Vidhya, 31 May 2023. [https://www.analyticsvidhya.com/blog/2022/08/database-normalization-a-step-by-step-guide-with-examples/](https://www.analyticsvidhya.com/blog/2022/08/database-normalization-a-step-by-step-guide-with-examples/)
 
