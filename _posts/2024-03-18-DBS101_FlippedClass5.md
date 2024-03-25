@@ -5,7 +5,6 @@ tags: [DBS101]
 ---
 
 ## Topic: Reaching the Depths of Relational Database Normalization
-### What Is Normalization?
 
 Database normalization is the process of organizing a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity. It was first proposed by Edgar F. Codd.
 
@@ -19,7 +18,7 @@ Database normalization is the process of organizing a relational database in acc
     5 NF (Fifth Normal Form)
     6 NF (Sixth Normal Form)
 
-4NF to 6NF applies to multivalued dependencies and complex table scenarios. In this article, we discuss up to BCNF.
+4NF to 6NF applies to multivalued dependencies and complex table scenarios. 
 
 ![DATABASE](https://editor.analyticsvidhya.com/uploads/55956normalization.jpg)
 
@@ -125,10 +124,6 @@ If we observe here, the “Professor” attribute, a non-prime attribute, can de
 This is not allowed in BCNF. So, how do we decompose this relation?
 
 ![DATABASE](https://editor.analyticsvidhya.com/uploads/89118Blank%20board%20(9).jpeg)
-
-Boyce-Codd Normal Form
-
-Until here, we have seen normal forms up to BCNF. Here are some guidelines to follow while normalizing the database.
 
 ### Third Normal Form (3NF):
 ---
