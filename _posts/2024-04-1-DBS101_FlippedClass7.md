@@ -32,6 +32,7 @@ The transaction log file is one of the important parts of the manageability by p
 Handling the problem of concurrent access to data through either locking or other mechanisms of concurrency control is very important for the data to remain free from corruption, keeping the integrity of the data by multiple users.
 
 ### Index Management:
+
 According to this case, efficient data structures used for indexing, such as B-Trees or Hash Indexes, have to be implemented. This will speed up data query executions through faster data access.
 Thus, query processing should be concerned with the generation, maintenance, and use of proper indices at processing time to guarantee the best performance of a query.
 Concurrency and synchronization of the index relate to its management because this will make sure that data integrity and consistency of data are maintained in a multi-user environment.
@@ -55,6 +56,7 @@ Handling media failure and restore processes is essential for data protection an
 Data and log files are the kind of files that very much need the data's backup and restore operations so as to ensure availability, point in time for recovery, and so forth.
 
 ### Performance Monitoring and Tuning:
+
 Monitoring tools must be implemented in order to track performance database metrics and earlier identifications of potential bottlenecks or issues.
 
 Developing new analytic approaches, which can be applied to optimize and fine-tune the query execution plans, indexing strategies, and effective use of the buffer pool in a manner that significantly enhances general database system performance. It is an important element to tuning database configuration parameters according to the characteristics of workloads meeting the performance and resource utilization needs.
