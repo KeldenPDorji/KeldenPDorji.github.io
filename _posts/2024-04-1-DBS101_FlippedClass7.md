@@ -29,11 +29,11 @@ Determining the appropriate buffer pool size is crucial for balancing memory usa
 
 ### Transaction Management:
 
-Having a ACID-compliance (Atomicity, Consistency, Isolation, Durability) which implies that the system is not crashing when similar time zones make requests simultaneously is imperative.
+Having an ACID-compliance (Atomicity, Consistency, Isolation, Durability) which implies that the system is not crashing when similar time zones make requests simultaneously is imperative.
 
-The transaction log files, which together with the recovery log, play the role of failure recovery after crashes/evens and restoring the operation into the condition of the highest consistency and integrity after failures, are one of the most important log files.
+The transaction log files, which together with the recovery log, play the role of failure recovery after crashes/events and restoring the operation into the condition of the highest consistency and integrity after failures, are one of the most important log files.
 
-Weaved together with locking or other procedure of concurrency control - that in effect is one of the fundamental factors of the stable performance of building systems without incorporations of data corruptions from various users and removing damages from third parties.
+Weaved together with locking or other procedures of concurrency control - that in effect is one of the fundamental factors of the stable performance of building systems without incorporation of data corruptions from various users and removing damages from third parties.
 
 ### Index Management:
 
@@ -53,7 +53,7 @@ The Buffer Pool combines these units to write the same codes that bring the same
 
 ### Concurrency Control:
 
-One should appeal to the importance of coordination not to exceed the volume of the requests for the data, since during the pace of the multiple entries the correctness of the data might be lost. The impasse may be reviewed, the ruse and solutions to it should be managed, that are to avoid recrewing system stability and resource scarcerce. This can be possibly done via the programming of different isolation level which aid issues like read committed, repeatable read, and serializable on the control of concurrent. Providing provides a method of keeping data consistent even in an environment where there are many different users.
+One should appeal to the importance of coordination not to exceed the volume of the requests for the data, since during the pace of the multiple entries the correctness of the data might be lost. The impasse may be reviewed, the ruse and solutions to it should be managed, that is to avoid recrewing system stability and resource scarcity. This can be possibly done via the programming of different isolation levels which aid issues like read committed, repeatable read, and serializable on the control of concurrent. Providing a method of keeping data consistent even in an environment where there are many different users.
 
 ### Recovery and Backup:
 
@@ -61,10 +61,10 @@ Checkpoint, and write-ahead technologies are the most important features of any 
 
 It cannot be doubted that to do this step as well as the further actions the data protection and complete disaster recovery are of primary importance.
 
-The occurrence in the system of the entire files being lost in the moment is the alarming job that necessarily conduct data backup and restoration activities in order to managed the system and to retrieve to some part of previous execution.
+The occurrence in the system of the entire files being lost at the moment is the alarming job that necessarily conducts data backup and restoration activities in order to manage the system and to retrieve some part of previous execution.
 
 ### Performance Monitoring and Tuning:
 
-Not only does monitoring approach should know about the tricks of the trade to avoid the failure with updated collection metrics, but also know the potential others.
+Not only does monitoring approach should know about the tricks of the trade to avoid the failure with updated collection metrics, but also know the potential of others.
 
 It is necessary to invent new analytic methods by means of development of the list of query arrests, attractive reading, paths of indexes and their very good answering facilities, to improve the performance. It is a main part of system health for which it doubtlessly suffers from the fact of workloads which have their performance and resource needs, therefore, they are forced to match these requirements.
