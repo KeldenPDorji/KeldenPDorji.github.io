@@ -46,7 +46,7 @@ It integrates the storage, buffer pool, and transaction management units, ensuri
 
 ### Concurrency Control:
 
-It is important to emphasize that locking should be used for putting into place mechanisms that control concurrent access to data; otherwise, data corruption or inconsistency may occur. The deadlock can be detected and resolved, the strategies of deadlock detection and resolution should be controlled, as they avoid system stability and resource starvation. At the same time, different isolation levels can be exploited with the help of it (such as read committed, repeatable read, serializable) in controlling the degree of concurrency, hence maintaining data consistency in multi-user environments.
+It is important to emphasize that locking should be used for putting into place mechanisms that control concurrent access to data; otherwise, data corruption or inconsistency may occur. The deadlock can be detected and resolved, the strategies of deadlock detection and resolution should be controlled, as they avoid system stability and resource starvation. At the same time, different isolation levels can be exploited with the help of it (such as read committed, repeatable read, serializable) in controlling the degree of concurrency,hence maintaining data consistency in multi-user environments.
 
 ### Recovery and Backup:
 
