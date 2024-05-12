@@ -8,63 +8,62 @@ tags: [DBS101]
 
 ### Disk Storage Management:
 
-The allocation as well as the deallocation of disk blocks should be well-performed maneuvers so that the database consumes the necessary storage space in an appropriate way, minimizes the fragmentation, and maximizes the performance of its database.
+The allocation as well as the deallocation of disk blocks should be well-performed maneuvers to avoid the database consuming unnecessary storage space in an inappropriate way, reduce the fragmentation, and improve the performance of its database.
 
-Consistent performance of disk block transfer operations bears significance in a file system as it guarantees integrity and consistency of data.
+Continuity of disk block transfer operations sets the importance of a file system as it ensures credible and trustworthy data.
 
-Runs of consecutive units of data are effective for read and write operations.
+A series of consistent units of data, mainly for reading and writing, are streamline operations.
 
 ### RAID Configuration:
 
-RAID level selection is a key issue of achieving an optimum balance among performance, duplicity and cost.
+RAID level selection is the main factor in finding an optimal balance between performance, duplicity and cost.
 
-The advantages of raid striping,and jsoning, parity for raid are availability of data, fault tolerance, and performance during read / write.
+These are the plus sides of RAID striping and parity: availability, fault tolerance, and increased performance during reading and writing.
 
-One must ensure care to deal with scenarios that include cases like disk failure and dedicated logical volumes to keep the data integrity intact while minimizing or reducing the time of downtime also.
+It is mandatory to implement proper procedures to be able to process scenarios such as disk failure and separate specific logical volumes to preserve the data integrity while simultaneously minimizing or reducing the time for which the service would be down.
 
 ### Buffer Pool Management:
 
-An effective in-memory buffer pool has to be set in place to cache data required with great frequency, which may not fit into memory all at once, hence disk I/Os are reduced for good performance in general.
-Determining the appropriate buffer pool size is crucial for balancing memory usage and performance requirements. Buffer Pool Replacement policies, such as Least Recently Used (LRU) or Clock, are employed in a way to properly use memory for efficient utilization and eviction of data, which is least useful. Good buffer pool management in read and write operations is necessary for maintaining data consistency and avoiding data corruption. All the above-highlighted points, in connection to the buffer pool, are very essential for the guarantee of data integrity in multi-user environments.
+An efficient in-memory buffer pool should be introduced which will cache the data that is required frequently and may not fit into the memory at once, thus the disk I/Os are reduced for a better performance in general. Deciding on an appropriate buffer size that complies with a balance of utilization of memory, just as performance, is a must. Buffer Pool Replacement strategies, including LRU (Recently Used), or Clock are utilised in such a way to efficiently use memory by evicting the least useful data. The good buffer pool management in reading and writing operations is crucial for keeping data consistency and preventing data corruption. Summarizing all the major points discussed in regard to buffer pool, they are important for the data integrity maintenance in CAS.
 
 ### Transaction Management:
 
-Having an ACID-compliance (Atomicity, Consistency, Isolation, Durability) which implies that the system is not crashing when similar time zones make requests simultaneously is imperative.
+This is even more important because the system should be ACID-compliant (Atomicity, Consistency, Isolation, Durability) and that it cannot crash if two different time zones make requests at the same time.
 
-The transaction log files, which together with the recovery log, play the role of failure recovery after crashes/events and restoring the operation into the condition of the highest consistency and integrity after failures, are one of the most important log files.
+The transaction log files, which together with the recovery log, are the most important log files as they are responsible for failure recovery after crashes/events and restoring the operation into the condition of the highest consistency and integrity after failures
 
-Weaved together with locking or other procedures of concurrency control - that in effect is one of the fundamental factors of the stable performance of building systems without incorporation of data corruptions from various users and removing damages from third parties.
+Woven with locks or sequences of controlling concurrency, provided in the form of the basic principle that is the measure of the provision of non-disturbance of the building system data from various users and their damages created by third parties.
 
 ### Index Management:
 
-The solution of this problem depends on logical hashing of 2 B-Tree or Hash index.(The Hash index is the one that is most widely used as an index). Moreover, by this means only full-functioning processes will be used, and carrying out other operations will be very quick thus.
+The resolution of this problem relies upon the applications of two logical hashings of binary B-Tree or Hash index. (The Hash index is the one that is most popularly used as an index). This in addition means that with this option just useful processes will be chosen. And therefore it is just easy to perform other processes.
 
-Being said this, however, the task of the indexes is going on when the query is passed and at runtime. These indices are built and maintained. The whole process gets executed at the same time when the query is processed.
+In addition, the function of the indices takes place during query using as well as during run time. These indices are constructed and kept up to date. Processing is done simultaneously on the entire group of data and is triggered when the query is run.
 
-Managing matters of time and synchronization of data up to an extent is more related to the data management routine. However, the issue of data continuity and consistency in the multiuser environment is permanently solved.
+Manage both time and date sync with the functionality similar to a typical data management approach. Nevertheless, the problem of data continuity and consistency in the multiuser environment is permanently solved.
 
 ### Query Processing:
 
-I think that the construction of a query parser and a good quality optimizer are very important components that affect the whole system and make it work to the full extent. The optimizer however has to be written in a way that would allow it to be resource efficient and get maximum performance possible.
+In my opinion, the query parser and the optimizer that are being constructed are very vital components, which also play a role of boosters for the whole system to work properly. But the optimizer that is written so that it is resource-efficient and is able to get maximal performance as possible the best.
 
-It smartly decides the legal action planning function whenever the users are trying to find and analyze the data (like table or index) for a searching and manipulating activity operationally.
+It is a smart technology that plans the legal action whenever the users are looking for and analyzing the data (for instance, a table or an index) for a search and manipulation operationally.
 
-The Buffer Pool combines these units to write the same codes that bring the same output as Non-Uniform and Consistent logical accessing and modifying of data.
+The Buffer Pool system conjoins these units to execute the coding which is associated with the output of Non-Uniform and Consistent logical data that is accessed and manipulated either as an input or output.
 
 ### Concurrency Control:
 
-One should appeal to the importance of coordination not to exceed the volume of the requests for the data, since during the pace of the multiple entries the correctness of the data might be lost. The impasse may be reviewed, the ruse and solutions to it should be managed, that is to avoid recrewing system stability and resource scarcity. This can be possibly done via the programming of different isolation levels which aid issues like read committed, repeatable read, and serializable on the control of concurrent. Providing a method of keeping data consistent even in an environment where there are many different users.
+It is recommended to care to rear the order not to exceed the data number requests, as this may lead to the wrong information loss in a fast flow of the requests entries. The deadlock might be reviewed, the trick and the solutions to it should be handled, that is to avoid reworking of the system and the resources shortage. Such a can be carried out by a program of various isolation levels that cope with the problems of read committed as well as repeatable read among others that take care of concurrent data processing. With a method of ensuring that the data stay consistent even in multiple users' computer networks.
 
 ### Recovery and Backup:
 
-Checkpoint, and write-ahead technologies are the most important features of any transactional system as they address consistency and recovery issues that would otherwise exist if these were not in place to face the system crashes or failures.
+The most vital features of any transactional system are checkpoint, and write-ahead technologies which solve consistency and recovery problems that would be there if these were not present in the system to deal with system crashes or failures.
 
-It cannot be doubted that to do this step as well as the further actions the data protection and complete disaster recovery are of primary importance.
+Absolutely, to approach such an option, first of all, data protection and a disaster recovery plan should come on first priority.
 
-The occurrence in the system of the entire files being lost at the moment is the alarming job that necessarily conducts data backup and restoration activities in order to manage the system and to retrieve some part of previous execution.
+The threat of losing entire files in the system in the middle of working process should definitely keep data backup and recovery activities busy during the system management and at least to some extent get some bits of work already done.
 
 ### Performance Monitoring and Tuning:
 
-Not only does monitoring approach should know about the tricks of the trade to avoid the failure with updated collection metrics, but also know the potential of others.
+The monitoring approach not only should know the tricks of the trade to avoid the failure with the updated collection metrics, but also the potential of others.
 
-It is necessary to invent new analytic methods by means of development of the list of query arrests, attractive reading, paths of indexes and their very good answering facilities, to improve the performance. It is a main part of system health for which it doubtlessly suffers from the fact of workloads which have their performance and resource needs, therefore, they are forced to match these requirements.
+The perfection of analytic processes involves the creation of an arrest list, with an attractive look, readiness of index concatenation and good searchability. System adequacy is one of the main factors of the system health. Nevertheless, this main requirement is opposed by the performance and resource which don’t match with these requirements.
